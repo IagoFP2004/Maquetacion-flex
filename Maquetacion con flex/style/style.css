@@ -1,11 +1,12 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 .contenedor {
     width: 90%;
     display: flex;
     flex-direction: row;
-    
+
     flex-wrap: wrap;
 }
 
@@ -21,13 +22,15 @@ header {
     justify-content: space-between;
 }
 
-.menu a{
+
+
+.menu a {
     text-decoration: none;
     padding: 20px;
     color: white;
 }
 
-.menu a:hover{
+.menu a:hover {
     text-decoration: underline;
 }
 
@@ -42,7 +45,7 @@ main {
     padding: 0px 20px;
 }
 
-main img{
+main img {
     width: 100%;
 }
 
@@ -55,12 +58,12 @@ aside {
     justify-content: space-between;
 }
 
-.ad{
+.ad {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 20%;
-    background-color:#4264a2 ;
+    background-color: #4264a2;
     text-align: center;
     margin: 10px;
     color: white;
@@ -68,53 +71,78 @@ aside {
 }
 
 footer {
-    margin-top: 20px;
-    width: 100%;
+    margin: 0;
+    padding: 20px;
+    width: 85%;
     display: flex;
     align-items: baseline;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, 0.2);
     color: white;
+    margin-left: 150px;
 }
 
-.autor{
+.autor {
     padding-left: 20px;
 }
 
-.redes-sociales  a{
+.redes-sociales a {
     padding-right: 20px;
     color: white;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
 
-    header{
+    .contenedor {
+        margin-left: 20px;
+    }
+
+    header {
         display: flex;
         flex-direction: column;
+        width: 100%; 
+        padding: 20px; 
     }
 
-    menu{
+    .menu {
         display: flex;
         flex-direction: row;
-    }
-
-    main{
+        justify-content: center;
         width: 100%;
+        padding:0 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+
     }
 
-    aside{
+
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+
+    }
+
+    aside {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
         width: 100%;
-        margin-left: 150px;
-        
+        margin: 0;
     }
 
-    .ad{
-        display: flex;
-        align-items: center;
-        width: 40%;
-        height: 60%;
+    .ad {
+        width: 45%;
+        height: auto;
+        margin: 5px;
+         text-align: center;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 10px;
     }
 }
